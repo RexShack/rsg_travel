@@ -60,7 +60,7 @@ AddEventHandler("rsg_travel:client:guarma_boat", function()
 			SetCinematicModeActive(false)
 			ShutdownLoadingScreen()
 		else
-			exports['rsg_notify']:DisplayNotification('you do not have a ticket!', 5000)
+			exports['qbr-core']:Notify(9, 'you do not have a ticket!', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['boatticket'] = 1 })
 end)
@@ -84,7 +84,7 @@ AddEventHandler("rsg_travel:client:stdenis_boat", function()
 			Wait(1000)
 			SetCinematicModeActive(false)
 		else
-			exports['rsg_notify']:DisplayNotification('you do not have a ticket!', 5000)
+			exports['qbr-core']:Notify(9, 'you do not have a ticket!', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['boatticket'] = 1 })
 end)
